@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Elements Showcase</title>
+</head>
+<body>
+    <h1>About Me</h1>
+
+    <a href="./table.html"> Go to Table  ||  <a href="./index.html">Go to Home page</a>
+
+    <section>
+        <h2>Welcome Message</h2>
+        <video controls>
+            <source src="welcome.mp4" type="video/mp4">
+            <source src="welcome.webm" type="video/webm">
+            <source src="welcome.ogv" type="video/ogg">
+        </video>
+    </section>
+
+    <section>
+        <h2>Audio Message</h2>
+        <audio controls>
+            <source src="about-me.mp3" type="audio/mpeg">
+            <source src="about-me.ogg" type="audio/ogg">
+        </audio>
+    </section>
+
+    <section>
+        <h2>Picture Element</h2>
+        <picture>
+            <source srcset="./images/me-tablet.jpg" media="(max-width: 600px)">
+            <source srcset="./images/me-mobile.jpg" media="(max-width: 1200px)">
+            <source srcset="./images/me-desktop.jpg" media="(min-width: 1201px)">
+            <img src="me-default.jpg" alt="About Me" width="50%" >
+        </picture>
+    </section>
+
+   
+</body>
+</html>
